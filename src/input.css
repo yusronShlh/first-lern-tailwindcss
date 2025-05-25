@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import url('"https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Poetsen+One&family=Share+Tech&display=swap"');
+
+@theme {
+  --color-primary: #00ffff;
+  --color-secondary: #0b486b;
+  --color-tertiary: #000fff;
+  --font-arial: "Arial, sans-serif";
+  --bg-image1: url("public/hal-3.jpeg");
+  --font-playwrite: "Playwrite DK Loopet", cursive;
+  --font-poetsen: "Poetsen One", sans-serif;
+  --font-share: "Share Tech", sans-serif;
+}

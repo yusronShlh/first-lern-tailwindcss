@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Poetsen+One&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav
+      id="nabar"
+      class="flex items-center justify-between py-5 px-[7%] fixed top-0 left-0 w-full z-50 bg-white/15 backdrop-blur-sm transition-duration-300"
+    >
+      <div class="flex items-center space-x-2">
+        <img src="/public/ceklis.png" alt="logo" class="w-10 h-10" />
+        <h2 class="font-poetsen text-xl">NotesDay</h2>
+      </div>
+      <!-- dekstop menu -->
+      <ul class="hidden md:flex items-center space-x-12 gap-19">
+        <li class="flex items-center space-x-6 gap-7 capitalize font-playwrite">
+          <a
+            href="#"
+            class="relative inline-block text-base transition-transform duration-300 hover:-translate-y-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-700"
+            >home</a
+          ><a
+            href="#"
+            class="relative inline-block text-base transition-transform duration-300 hover:-translate-y-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-700"
+            >FAQ</a
+          ><a
+            href="#"
+            class="relative inline-block text-base transition-transform duration-300 hover:-translate-y-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-700"
+            >contact</a
+          >
+        </li>
+        <!-- button get app in nav -->
+        <button
+          class="border-2 text-lg py-1.5 cursor-pointer px-4 hover:bg-tertiary hover:text-white duration-500 rounded-3xl font-semibold hover:border-tertiary"
+        >
+          get app
+        </button>
+        <!-- button humberger menu navbar -->
+      </ul>
+      <button
+        id="menu-toggle"
+        class="md:hidden pointer-events-auto group flex items-center justify-center relative z-[102] [transition:all_0.5s_ease] rounded-[0.375rem] p-[5px] cursor-pointer border border-[#999] outline-none focus-visible:outline-0"
+      >
+        <svg
+          fill="currentColor"
+          stroke="none"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-7 h-7 overflow-visible [transition:transform_.35s_ease] group-hover:[transition-delay:.25s] [&amp;_path]:[transition:transform_.35s_ease] group-hover:rotate-45"
+        >
+          <path
+            class="group-hover:[transform:rotate(112.5deg)_translate(-27.2%,-80.2%)]"
+            d="m3.45,8.83c-.39,0-.76-.23-.92-.62-.21-.51.03-1.1.54-1.31L14.71,2.08c.51-.21,1.1.03,1.31.54.21.51-.03,1.1-.54,1.31L3.84,8.75c-.13.05-.25.08-.38.08Z"
+          ></path>
+          <path
+            class="group-hover:[transform:rotate(22.5deg)_translate(15.5%,-23%)]"
+            d="m2.02,17.13c-.39,0-.76-.23-.92-.62-.21-.51.03-1.1.54-1.31L21.6,6.94c.51-.21,1.1.03,1.31.54.21.51-.03,1.1-.54,1.31L2.4,17.06c-.13.05-.25.08-.38.08Z"
+          ></path>
+          <path
+            class="group-hover:[transform:rotate(112.5deg)_translate(-15%,-149.5%)]"
+            d="m8.91,21.99c-.39,0-.76-.23-.92-.62-.21-.51.03-1.1.54-1.31l11.64-4.82c.51-.21,1.1.03,1.31.54.21.51-.03,1.1-.54,1.31l-11.64,4.82c-.13.05-.25.08-.38.08Z"
+          ></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- mobile menu -->
+    <div
+      id="mobile-menu"
+      class="md:hidden flex-col flex fixed top-0 right-0 h-screen w-2/3 bg-white/10 backdrop-blur-md z-60 translate-x-full transition-transform duration-500 ease-in-out justify-between"
+    >
+      <ul class="flex flex-col items-center justify-center space-y-6 pt-20">
+        <li>
+          <a href="#" class="text-base font-playwrite text-secondary">home</a>
+        </li>
+        <li>
+          <a href="#" class="text-base font-playwrite text-secondary">FAQ</a>
+        </li>
+        <li>
+          <a href="#" class="text-base font-playwrite text-secondary"
+            >contact</a
+          >
+        </li>
+      </ul>
+      <div class="flex mb-12 justify-center">
+        <button
+          class="border-2 text-lg py-1 px-6 hover:bg-tertiary hover:text-white duration-500 rounded-3xl font-semibold hover:border-tertiary cursor-pointer"
+        >
+          Get app
+        </button>
+      </div>
+    </div>
+    <!-- navbar end -->
+    <!-- hero section -->
+    <section
+      id="hero"
+      class="bg-gradient-to-l from-primary to-secondary h-screen w-full flex flex-col items-center justify-center gap-16"
+    >
+      <div class="flex flex-col w-full items-center justify-center">
+        <h1 class="font-poetsen uppercase text-6xl text-white">
+          your notes, your way
+        </h1>
+        <h1 id="typing-hero" class="font-share text-xl h-9"></h1>
+      </div>
+      <!-- button hero -->
+      <div class="flex items-center justify-center space-x-4">
+        <button
+          class="cursor-pointer font-semibold overflow-hidden relative z-10 border rounded-3xl border-tertiary hover:border-tertiary group px-8 py-2"
+        >
+          <span
+            class="relative z-10 text-tertiary group-hover:text-white text-xl duration-500"
+            >Get App</span
+          >
+          <span
+            class="absolute w-full h-full bg-tertiary -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"
+          ></span>
+          <span
+            class="absolute w-full h-full bg-tertiary -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"
+          ></span>
+        </button>
+
+        <button
+          class="cursor-pointer font-semibold overflow-hidden relative z-10 border rounded-3xl border-tertiary hover:border-tertiary group px-8 py-2"
+        >
+          <span
+            class="relative z-10 text-tertiary group-hover:text-white text-xl duration-500"
+            >See More</span
+          >
+          <span
+            class="absolute w-full h-full bg-tertiary -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"
+          ></span>
+          <span
+            class="absolute w-full h-full bg-tertiary -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"
+          ></span>
+        </button>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- features section -->
+    <section class="bg-gradient-to-l from-primary to-secondary">
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 gap-4 md:grid-cols-4 md:items-center md:gap-8"
+        >
+          <div class="md:col-span-1">
+            <div class="max-w-lg md:max-w-none">
+              <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </h2>
+
+              <p class="mt-4 text-white/80">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                doloremque saepe architecto maiores repudiandae amet perferendis
+                repellendus, reprehenderit voluptas sequi.
+              </p>
+            </div>
+          </div>
+
+          <div class="md:col-span-3">
+            <img
+              src="https://images.unsplash.com/photo-1731690415686-e68f78e2b5bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="rounded"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- features section end -->
+
+    <!-- footer  -->
+    <footer class="bg-gray-100 dark:bg-gray-900">
+      <div
+        class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
+      >
+        <div class="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
+          <a
+            class="inline-block rounded-full bg-teal-600 p-2 text-white shadow-sm transition hover:bg-teal-500 sm:p-3 lg:p-4 dark:bg-gray-700 dark:text-teal-300 dark:hover:bg-gray-600"
+            href="#hero"
+          >
+            <span class="sr-only">Back to top</span>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="size-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="lg:flex lg:items-end lg:justify-between">
+          <div>
+            <div
+              class="flex justify-center items-center text-teal-600 lg:justify-start dark:text-teal-300"
+            >
+              <img src="/public/ceklis.png" alt="logo" class="max-w-10" />
+              <h2 class="font-poetsen text-xl">NotesDay</h2>
+            </div>
+
+            <p
+              class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left dark:text-gray-400"
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              consequuntur amet culpa cum itaque neque.
+            </p>
+          </div>
+
+          <ul
+            class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
+          >
+            <li>
+              <a
+                class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                href="#"
+              >
+                About
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                href="#"
+              >
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                href="#"
+              >
+                Projects
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                href="#"
+              >
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p
+          class="mt-12 text-center text-sm text-gray-500 lg:text-right dark:text-gray-400"
+        >
+          Copyright &copy; 2025. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>
